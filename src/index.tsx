@@ -11,7 +11,7 @@ class Main extends React.Component<any, any> {
 
   public render() {
     return (
-      <HelloWorld defaultName="passed down props!" />
+      <HelloWorld name="passed down props!" />
     );
   }
 }

@@ -4,11 +4,11 @@ import * as React from 'react';
 import HelloContent from './HelloContent';
 import HelloForm from './HelloForm';
 
-export default class HelloWorld extends React.Component<any, any> {
+export default class HelloWorld extends React.Component<IHelloContentProps, any> {
   constructor(props:any) {
     super(props);
     this.state = {
-      name: this.props.defaultName
+      name: this.props.name
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleInput = this.handleInput.bind(this);
